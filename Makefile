@@ -2,13 +2,12 @@
 # $Id: Makefile 1275 2008-02-07 13:08:38Z dhellmann $
 #
 
-SVNHOME=$(shell svn info | grep "^URL" | cut -f2- -d: | sed 's/^ //')
 PROJECT=AstronomyPictureOfTheDay
-VERSION=$(shell basename $(SVNHOME))
+VERSION=3.2
 RELEASE=$(PROJECT)-$(VERSION)
+CONTENTS=$(PROJECT).app README.txt
 
 info:
-	SVNHOME=$(SVNHOME)
 	PROJECT=$(PROJECT)
 	VERSION=$(VERSION)
 	RELEASE=$(RELEASE)
@@ -16,20 +15,14 @@ info:
 	@echo "Run 'make package' to create the zip file"
 	@echo
 
-package: dist export
-	(rm -f dist/$(RELEASE).zip)
-	(cd dist/; zip -r $(RELEASE).zip $(RELEASE))
+package: export
+	(cd dist/; zip -q -r $(RELEASE).zip $(RELEASE))
 	mv dist/*.zip ~/Desktop/
 
-dist:
-	mkdir -p dist
-
-#
-# Dump a version that does not include .svn directories
-#
 export:
-	rm -rf dist/$(RELEASE)
-	(cd dist; svn export $(SVNHOME) $(RELEASE); rm -f $(RELEASE)/Makefile)
+	rm -rf dist
+	mkdir -p dist/$(RELEASE)
+	for f in $(CONTENTS); do echo "Copying $$f..."; cp -a $$f dist/$(RELEASE); done
 
 %: %.in
 	cat $< | sed 's/VERSION/$(VERSION)/g' > $@
