@@ -11,16 +11,16 @@ The inspiration for this script came from an article by Andy Ihnatko
 Installation:
 
  1. Unpack the ZIP file.
- 2. Run the personalize.command script to set the proper names of the
-directories within the workflow.
- 3. Open the workflow within Automator.
- 4. Run it.
+ 2. Copy AstronomyPictureOfTheDay to your Applications folder.
+ 3. Run the application.
 
-To schedule the job to run daily, use Automator to save the workflow
-as an application.  Then use iCal to schedule an event to run daily to
-open the application.
+To have a new picture downloaded every day, use iCal to schedule an
+event to run daily to open the application.
 
 You will want to periodically clean out the screensaver pictures
-folder.
+folder to remove old pictures.
 
-$Id: README.txt 410 2006-12-26 13:26:18Z dhellmann $
+For the latest version, check
+http://www.doughellmann.com/projects/AstronomyPictureOfTheDay/
+
+$Id: README.txt 785 2007-07-31 11:20:42Z dhellmann $

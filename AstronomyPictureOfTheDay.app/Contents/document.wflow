@@ -21,6 +21,168 @@
 					<true/>
 					<key>Types</key>
 					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.1</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionIconName</key>
+				<string>Terminal</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>echo $HOME/Pictures/Desktop Picture of the Day</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string></string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>BC223CBA-4EC9-4658-BCE4-4CF803DFA405</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>D0FCDEC5-E561-4332-8A20-C148C2CDF3E3</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>B2299434-5CE3-4841-9F09-3E509AB237ED</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>556.000000:813.000000</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
 						<string>com.apple.applescript.alias-object</string>
 					</array>
 				</dict>
@@ -44,9 +206,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>fileNames</key>
-					<array>
-						<string>/Users/dhellmann/Pictures/Desktop Picture of the Day</string>
-					</array>
+					<array/>
 				</dict>
 				<key>Application</key>
 				<array>
@@ -109,7 +269,7 @@
 			<key>isOutletsVisible</key>
 			<false/>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 			<key>location</key>
 			<string>836.000000:451.333344</string>
 		</dict>
@@ -197,69 +357,77 @@
 					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.alias-object</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.1</string>
+				<string>2.0.1</string>
 				<key>AMProvides</key>
 				<dict>
 					<key>Container</key>
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.alias-object</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/New Folder.action</string>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
 				<key>ActionIconName</key>
-				<string>Finder</string>
+				<string>Terminal</string>
 				<key>ActionName</key>
-				<string>New Folder</string>
+				<string>Run Shell Script</string>
 				<key>ActionParameters</key>
 				<dict>
-					<key>newName</key>
-					<string>Desktop Picture of the Day</string>
-					<key>targetLocation</key>
-					<string>~/Pictures</string>
+					<key>COMMAND_STRING</key>
+					<string># Create the download directory
+mkdir "/tmp/Desktop Picture of the Day"</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
+					<key>source</key>
+					<string></string>
 				</dict>
 				<key>Application</key>
 				<array>
-					<string>Finder</string>
+					<string>Automator</string>
 				</array>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.MakeNewFolder</string>
+				<string>com.apple.RunShellScript</string>
 				<key>CFBundleVersion</key>
-				<string>1.1</string>
+				<string>2.0.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
-				<true/>
+				<false/>
 				<key>CanShowWhenRun</key>
 				<true/>
 				<key>Category</key>
 				<array>
-					<string>Files</string>
+					<string></string>
 				</array>
 				<key>Class Name</key>
-				<string>NewFolderAction</string>
+				<string>RunShellScriptAction</string>
 				<key>InputUUID</key>
-				<string>0A7FB97B-5064-45EE-9F47-F074BEB9B4BC</string>
+				<string>672AB4FE-EAB4-4C1C-872F-D0C8989FE4E2</string>
 				<key>Keywords</key>
 				<array>
-					<string>Folder</string>
-					<string>Create</string>
-					<string>Make</string>
-					<string>New</string>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>39CACD22-BDC5-4887-B4D9-2FC429055059</string>
+				<string>E99E2134-1CB3-4388-AAE2-AD02FA91312D</string>
 				<key>StartAction</key>
 				<false/>
 				<key>UUID</key>
-				<string>BF94A579-4C9B-4412-8C3D-7648A2E2A0C5</string>
+				<string>1476FE97-BB64-46D8-A58A-AB2309214EE6</string>
 				<key>UnlocalizedApplications</key>
 				<array>
-					<string>Finder</string>
+					<string>Automator</string>
 				</array>
 				<key>arguments</key>
 				<dict>
@@ -268,7 +436,7 @@
 						<key>default value</key>
 						<string></string>
 						<key>name</key>
-						<string>newName</string>
+						<string>source</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -279,9 +447,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string>~/Desktop</string>
+						<string>/bin/sh</string>
 						<key>name</key>
-						<string>targetLocation</string>
+						<string>shell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -289,9 +457,48 @@
 						<key>uuid</key>
 						<string>1</string>
 					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
 				</dict>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/New Folder.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>collapsed</key>
 			<false/>
@@ -300,7 +507,7 @@
 			<key>isViewVisible</key>
 			<true/>
 			<key>location</key>
-			<string>1116.000000:415.666656</string>
+			<string>1116.000000:303.666656</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -533,7 +740,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>destinationPath</key>
-					<string>/Users/dhellmann/Pictures/Desktop Picture of the Day</string>
+					<string>/private/tmp/Desktop Picture of the Day</string>
 				</dict>
 				<key>Application</key>
 				<array>
@@ -611,79 +818,98 @@
 					<key>Container</key>
 					<string>List</string>
 					<key>Optional</key>
-					<false/>
+					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.alias-object</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.1</string>
+				<string>2.0.1</string>
 				<key>AMProvides</key>
 				<dict>
 					<key>Container</key>
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.alias-object</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Copy Finder Items.action</string>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
 				<key>ActionIconName</key>
-				<string>Finder</string>
+				<string>Terminal</string>
 				<key>ActionName</key>
-				<string>Copy Finder Items</string>
+				<string>Run Shell Script</string>
 				<key>ActionParameters</key>
 				<dict>
-					<key>replaceExisting</key>
-					<false/>
-					<key>toDirectory</key>
-					<string>/Users/dhellmann/Pictures/Screensaver Pictures/Astronomy Picture of the Day</string>
+					<key>COMMAND_STRING</key>
+					<string># Move newly downloaded pictures into place
+mv -f "/tmp/Desktop Picture of the Day" "$HOME/Pictures"
+
+# Copy the pictures into the screensaver directory
+ss_dir="$HOME/Pictures/Screensaver Pictures/Astronomy Picture of the Day"
+mkdir -p "$ss_dir"
+cp -f "$HOME/Desktop/Desktop Picture of the Day/*" "$ss_dir"
+
+# Output the name of the directory we just updated
+# so the next action can set the desktop picture
+echo $HOME/Pictures/Desktop\ Picture\ of\ the\ Day/*</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
+					<key>source</key>
+					<string></string>
 				</dict>
 				<key>Application</key>
 				<array>
-					<string>Finder</string>
+					<string>Automator</string>
 				</array>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.CopyFiles</string>
+				<string>com.apple.RunShellScript</string>
 				<key>CFBundleVersion</key>
-				<string>1.1</string>
+				<string>2.0.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
-				<true/>
+				<false/>
 				<key>CanShowWhenRun</key>
 				<true/>
 				<key>Category</key>
 				<array>
-					<string>Files</string>
+					<string></string>
 				</array>
 				<key>Class Name</key>
-				<string>CopyFilesAction</string>
+				<string>RunShellScriptAction</string>
 				<key>InputUUID</key>
-				<string>8E1E6426-FA25-4C8C-93B2-16BFBEA2929E</string>
+				<string>925AC5DC-5E01-492B-9CFC-522A372544B1</string>
 				<key>Keywords</key>
 				<array>
-					<string>File</string>
-					<string>Copy</string>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>E6FCA975-A3A5-481B-920D-8DE061433BED</string>
+				<string>5290CF53-0A74-41F2-A176-67DADD49D1CF</string>
 				<key>StartAction</key>
 				<false/>
 				<key>UUID</key>
-				<string>95B53CB9-3711-416C-8108-4899E684EA25</string>
+				<string>3B5AD371-54B7-435F-8192-08EA2A1398C6</string>
 				<key>UnlocalizedApplications</key>
 				<array>
-					<string>Finder</string>
+					<string>Automator</string>
 				</array>
 				<key>arguments</key>
 				<dict>
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<string>~/Desktop</string>
+						<string></string>
 						<key>name</key>
-						<string>toDirectory</string>
+						<string>source</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -694,9 +920,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string>/bin/sh</string>
 						<key>name</key>
-						<string>replaceExisting</string>
+						<string>shell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -704,9 +930,48 @@
 						<key>uuid</key>
 						<string>1</string>
 					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
 				</dict>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Copy Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>collapsed</key>
 			<false/>
@@ -715,7 +980,7 @@
 			<key>isViewVisible</key>
 			<true/>
 			<key>location</key>
-			<string>836.000000:762.333313</string>
+			<string>836.000000:480.333344</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -978,68 +1243,75 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>027EEA05-8672-49F4-95F5-88E4D535EFB8</key>
-		<dict>
-			<key>from</key>
-			<string>FCC8F120-FA53-4DBD-B8CB-4FD253B34D4C - B18A5F1B-D8D7-44C1-B034-A8394B6C8CFE</string>
-			<key>to</key>
-			<string>BF94A579-4C9B-4412-8C3D-7648A2E2A0C5 - 0A7FB97B-5064-45EE-9F47-F074BEB9B4BC</string>
-		</dict>
-		<key>226C559A-3446-4825-9673-A5405FF0BBB6</key>
-		<dict>
-			<key>from</key>
-			<string>BF94A579-4C9B-4412-8C3D-7648A2E2A0C5 - 39CACD22-BDC5-4887-B4D9-2FC429055059</string>
-			<key>to</key>
-			<string>8C26CE66-CBDD-4C91-BC53-DF7BAB43EE97 - 0322CE3B-9253-47C0-9E37-3DF54077381C</string>
-		</dict>
-		<key>2AE653D5-C451-40E2-B48E-174ED0E17FC7</key>
-		<dict>
-			<key>from</key>
-			<string>95B53CB9-3711-416C-8108-4899E684EA25 - E6FCA975-A3A5-481B-920D-8DE061433BED</string>
-			<key>to</key>
-			<string>49B603A5-9A66-4ECF-8DCD-3060CFA21CF1 - 6F1CC71C-D424-42E8-B4CC-97BE7C7AACC9</string>
-		</dict>
-		<key>366455CD-5873-427C-B154-71F34AF09AE1</key>
+		<key>123B2C61-2A69-457A-B578-929327280E7E</key>
 		<dict>
 			<key>from</key>
 			<string>3413DA24-6A12-4985-B3E7-86B575B19763 - 8A30EDEB-1C2E-4244-9706-2D64FE34DCF4</string>
 			<key>to</key>
 			<string>2E08F068-B86C-49E6-B284-8F4D1ACADAF3 - 8FBC1E34-8A98-40D0-96A0-9CA21726F57F</string>
 		</dict>
-		<key>82E97692-5ECC-4044-8C89-BBAEB1C49C0C</key>
+		<key>2422BC5E-C719-4397-A642-6B69E4522B42</key>
+		<dict>
+			<key>from</key>
+			<string>B2299434-5CE3-4841-9F09-3E509AB237ED - D0FCDEC5-E561-4332-8A20-C148C2CDF3E3</string>
+			<key>to</key>
+			<string>D0CA9199-B43C-4E86-A3F7-6FEDF3A39741 - AE0FD076-0AE5-43A0-9E09-AAD87C98E162</string>
+		</dict>
+		<key>6E7E02DF-CDCB-4F6C-A73A-184EB88F7935</key>
+		<dict>
+			<key>from</key>
+			<string>952A221F-DE8B-42E2-B19D-8C55AE66E49B - D6E099A9-70DC-4A9F-AA82-F48C4B79AFD3</string>
+			<key>to</key>
+			<string>7E799FC0-C366-43B6-9CCD-6152AA01473E - 30B82A2E-97AE-4DCF-8DE9-FC846A53F0C7</string>
+		</dict>
+		<key>74F0B959-7ED5-4AB9-B1E5-05BB6BC7CA6E</key>
 		<dict>
 			<key>from</key>
 			<string>8C26CE66-CBDD-4C91-BC53-DF7BAB43EE97 - FC5E267A-2F39-493C-9D81-104E555466D7</string>
 			<key>to</key>
 			<string>3413DA24-6A12-4985-B3E7-86B575B19763 - 5DFEDF79-9060-474E-8D6F-4E2E825E01E3</string>
 		</dict>
-		<key>975D6E9C-D258-42DB-A9A4-137EFC507DDB</key>
+		<key>8C62551A-6644-45F0-AAA0-03EBE8D660E5</key>
+		<dict>
+			<key>from</key>
+			<string>3B5AD371-54B7-435F-8192-08EA2A1398C6 - 5290CF53-0A74-41F2-A176-67DADD49D1CF</string>
+			<key>to</key>
+			<string>49B603A5-9A66-4ECF-8DCD-3060CFA21CF1 - 6F1CC71C-D424-42E8-B4CC-97BE7C7AACC9</string>
+		</dict>
+		<key>972EFD5C-FAED-42BD-A7C5-2CCF35BE94E5</key>
+		<dict>
+			<key>from</key>
+			<string>FCC8F120-FA53-4DBD-B8CB-4FD253B34D4C - B18A5F1B-D8D7-44C1-B034-A8394B6C8CFE</string>
+			<key>to</key>
+			<string>1476FE97-BB64-46D8-A58A-AB2309214EE6 - 672AB4FE-EAB4-4C1C-872F-D0C8989FE4E2</string>
+		</dict>
+		<key>A0F7FB46-3409-4DB6-8C7D-83F0FCD80CDD</key>
 		<dict>
 			<key>from</key>
 			<string>49B603A5-9A66-4ECF-8DCD-3060CFA21CF1 - 20D27CA9-C2DF-4F54-BD14-700450553291</string>
 			<key>to</key>
 			<string>952A221F-DE8B-42E2-B19D-8C55AE66E49B - B22ED399-EE9F-40F0-963A-C7D04F4CDF25</string>
 		</dict>
-		<key>A8A7EBBB-1DE5-45E1-B391-6181BEAAA4FC</key>
+		<key>CB780229-8FD6-4145-A1E8-233925E09B84</key>
 		<dict>
 			<key>from</key>
 			<string>2E08F068-B86C-49E6-B284-8F4D1ACADAF3 - 28EEB010-3512-41E3-BE5F-6F7B30049927</string>
 			<key>to</key>
-			<string>95B53CB9-3711-416C-8108-4899E684EA25 - 8E1E6426-FA25-4C8C-93B2-16BFBEA2929E</string>
+			<string>3B5AD371-54B7-435F-8192-08EA2A1398C6 - 925AC5DC-5E01-492B-9CFC-522A372544B1</string>
 		</dict>
-		<key>C6A65CB4-CE02-4AC6-ACBB-3DFE66A9EE7C</key>
+		<key>D1667066-AA7A-4B2C-8D9D-8ECB8D75F671</key>
+		<dict>
+			<key>from</key>
+			<string>1476FE97-BB64-46D8-A58A-AB2309214EE6 - E99E2134-1CB3-4388-AAE2-AD02FA91312D</string>
+			<key>to</key>
+			<string>8C26CE66-CBDD-4C91-BC53-DF7BAB43EE97 - 0322CE3B-9253-47C0-9E37-3DF54077381C</string>
+		</dict>
+		<key>F3B5F857-681A-42E2-A2AC-F7B71723AA58</key>
 		<dict>
 			<key>from</key>
 			<string>D0CA9199-B43C-4E86-A3F7-6FEDF3A39741 - B0E7C45D-31C3-4F5E-9179-4D66EB2855D9</string>
 			<key>to</key>
 			<string>FCC8F120-FA53-4DBD-B8CB-4FD253B34D4C - 2B494E05-8B27-4580-952E-1214FF939F4E</string>
-		</dict>
-		<key>DAB0E6FB-4541-4B37-86C9-B0378F97DFF3</key>
-		<dict>
-			<key>from</key>
-			<string>952A221F-DE8B-42E2-B19D-8C55AE66E49B - D6E099A9-70DC-4A9F-AA82-F48C4B79AFD3</string>
-			<key>to</key>
-			<string>7E799FC0-C366-43B6-9CCD-6152AA01473E - 30B82A2E-97AE-4DCF-8DE9-FC846A53F0C7</string>
 		</dict>
 	</dict>
 	<key>state</key>
@@ -1047,15 +1319,15 @@
 		<key>actionsSplitView</key>
 		<real>175</real>
 		<key>layoutFrame</key>
-		<string>{{0, 0}, {583, 1214}}</string>
+		<string>{{0, 0}, {583, 1343}}</string>
 		<key>layoutScrollPosition</key>
-		<string>{{0, 669}, {583, 545}}</string>
+		<string>{{0, 26}, {583, 545}}</string>
 		<key>mainSplitView</key>
 		<real>373</real>
 		<key>minorSplitView</key>
 		<real>403</real>
 		<key>windowFrame</key>
-		<string>{{96, 126}, {1001, 673}}</string>
+		<string>{{68, 141}, {1001, 673}}</string>
 	</dict>
 </dict>
 </plist>
