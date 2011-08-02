@@ -1,5 +1,5 @@
 #
-# $Id: Makefile 1273 2008-02-06 11:43:44Z dhellmann $
+# $Id: Makefile 1275 2008-02-07 13:08:38Z dhellmann $
 #
 
 SVNHOME=$(shell svn info | grep "^URL" | cut -f2- -d: | sed 's/^ //')
