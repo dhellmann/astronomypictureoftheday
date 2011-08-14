@@ -22,3 +22,11 @@ folder to remove old pictures.
 
 For the latest version, check
 http://www.doughellmann.com/projects/AstronomyPictureOfTheDay/
+
+Release History
+===============
+
+3.3
+
+  Fixes a problem with APOD pages that include links to multiple images
+  so that only the main image is downloaded.
