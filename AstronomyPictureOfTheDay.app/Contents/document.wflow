@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>153</string>
+	<string>247.1</string>
 	<key>AMApplicationVersion</key>
-	<string>2.0</string>
+	<string>2.1.1</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -119,9 +119,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string>/bin/sh</string>
+						<string></string>
 						<key>name</key>
-						<string>shell</string>
+						<string>source</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -132,9 +132,9 @@
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<false/>
 						<key>name</key>
-						<string>source</string>
+						<string>CheckedForUserDefaultShell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -158,9 +158,9 @@
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string>/bin/sh</string>
 						<key>name</key>
-						<string>CheckedForUserDefaultShell</string>
+						<string>shell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -172,7 +172,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>432.000000:1556.000000</string>
+				<string>302.000000:2439.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -272,7 +272,7 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>432.000000:1373.000000</string>
+				<string>302.000000:2256.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -460,9 +460,9 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string>/bin/sh</string>
+						<string></string>
 						<key>name</key>
-						<string>shell</string>
+						<string>source</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -473,9 +473,9 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<false/>
 						<key>name</key>
-						<string>source</string>
+						<string>CheckedForUserDefaultShell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -499,9 +499,9 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string>/bin/sh</string>
 						<key>name</key>
-						<string>CheckedForUserDefaultShell</string>
+						<string>shell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -513,7 +513,7 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>432.000000:1265.000000</string>
+				<string>302.000000:2148.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -582,7 +582,7 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 					<string>AMCategoryInternet</string>
 				</array>
 				<key>Class Name</key>
-				<string>AMAppleScriptAction</string>
+				<string>URLList</string>
 				<key>InputUUID</key>
 				<string>0322CE3B-9253-47C0-9E37-3DF54077381C</string>
 				<key>Keywords</key>
@@ -618,7 +618,7 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>432.000000:1082.000000</string>
+				<string>302.000000:1965.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified URLs.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -726,7 +726,7 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>432.000000:856.000000</string>
+				<string>302.000000:1739.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -740,6 +740,8 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 				<dict>
 					<key>Container</key>
 					<string>List</string>
+					<key>Optional</key>
+					<false/>
 					<key>Types</key>
 					<array>
 						<string>com.apple.cocoa.url</string>
@@ -798,7 +800,7 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 					<string>Photo</string>
 					<string>URL</string>
 					<string>Web</string>
-					<string>.Mac</string>
+					<string>MobileMe</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>8A30EDEB-1C2E-4244-9706-2D64FE34DCF4</string>
@@ -827,9 +829,179 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>432.000000:751.000000</string>
+				<string>302.000000:1634.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Image URLs from Webpage.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.1</string>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string># If the page links to more than one image, we only want the first one.
+cat - | head -n 1</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>8B199F51-8FAB-4A1C-A893-8057A7F18EA1</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>BC606AB6-EB1C-40B5-B8E8-5F20F5F84344</string>
+				<key>UUID</key>
+				<string>282E1BE3-A983-4A4D-A673-1DB818011C5D</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>302.000000:1351.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -935,7 +1107,7 @@ mkdir "/tmp/Desktop Picture of the Day"</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>432.000000:648.000000</string>
+				<string>302.000000:988.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Download URLs.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1061,9 +1233,9 @@ echo $HOME/Pictures/Desktop\ Picture\ of\ the\ Day/*</string>
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string>/bin/sh</string>
+						<string></string>
 						<key>name</key>
-						<string>shell</string>
+						<string>source</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -1074,9 +1246,9 @@ echo $HOME/Pictures/Desktop\ Picture\ of\ the\ Day/*</string>
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<false/>
 						<key>name</key>
-						<string>source</string>
+						<string>CheckedForUserDefaultShell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -1100,9 +1272,9 @@ echo $HOME/Pictures/Desktop\ Picture\ of\ the\ Day/*</string>
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string>/bin/sh</string>
 						<key>name</key>
-						<string>CheckedForUserDefaultShell</string>
+						<string>shell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -1114,7 +1286,7 @@ echo $HOME/Pictures/Desktop\ Picture\ of\ the\ Day/*</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>432.000000:545.000000</string>
+				<string>302.000000:705.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1132,7 +1304,7 @@ echo $HOME/Pictures/Desktop\ Picture\ of\ the\ Day/*</string>
 					<false/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.alias-object</string>
+						<string>com.apple.cocoa.path</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
@@ -1149,7 +1321,7 @@ echo $HOME/Pictures/Desktop\ Picture\ of\ the\ Day/*</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Set the Desktop Picture.action</string>
+				<string>/System/Library/Automator/Set Desktop Picture.action</string>
 				<key>ActionName</key>
 				<string>Set the Desktop Picture</string>
 				<key>ActionParameters</key>
@@ -1165,13 +1337,13 @@ echo $HOME/Pictures/Desktop\ Picture\ of\ the\ Day/*</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
-				<false/>
+				<true/>
 				<key>Category</key>
 				<array>
 					<string>AMCategoryFilesAndFolders</string>
 				</array>
 				<key>Class Name</key>
-				<string>AMAppleScriptAction</string>
+				<string>Set_Desktop_Picture</string>
 				<key>InputUUID</key>
 				<string>6F1CC71C-D424-42E8-B4CC-97BE7C7AACC9</string>
 				<key>Keywords</key>
@@ -1227,9 +1399,11 @@ echo $HOME/Pictures/Desktop\ Picture\ of\ the\ Day/*</string>
 				<dict>
 					<key>Container</key>
 					<string>List</string>
+					<key>Optional</key>
+					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.url-object</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>AMRequiredResources</key>
@@ -1298,7 +1472,7 @@ echo $HOME/Pictures/Desktop\ Picture\ of\ the\ Day/*</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>432.000000:296.000000</string>
+				<string>302.000000:306.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1415,9 +1589,9 @@ open "`cat - | grep '^http'`"</string>
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string>/bin/sh</string>
+						<string></string>
 						<key>name</key>
-						<string>shell</string>
+						<string>source</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -1428,9 +1602,9 @@ open "`cat - | grep '^http'`"</string>
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<false/>
 						<key>name</key>
-						<string>source</string>
+						<string>CheckedForUserDefaultShell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -1454,9 +1628,9 @@ open "`cat - | grep '^http'`"</string>
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string>/bin/sh</string>
 						<key>name</key>
-						<string>CheckedForUserDefaultShell</string>
+						<string>shell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -1468,7 +1642,7 @@ open "`cat - | grep '^http'`"</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>432.000000:193.000000</string>
+				<string>302.000000:203.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1478,96 +1652,160 @@ open "`cat - | grep '^http'`"</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>0A572BD1-231B-466E-A14A-77B5FB215F94</key>
-		<dict>
-			<key>from</key>
-			<string>B2299434-5CE3-4841-9F09-3E509AB237ED - B2299434-5CE3-4841-9F09-3E509AB237ED</string>
-			<key>to</key>
-			<string>D0CA9199-B43C-4E86-A3F7-6FEDF3A39741 - D0CA9199-B43C-4E86-A3F7-6FEDF3A39741</string>
-		</dict>
-		<key>30B55FDD-AD63-477A-B44C-2F647E832BBA</key>
-		<dict>
-			<key>from</key>
-			<string>3413DA24-6A12-4985-B3E7-86B575B19763 - 3413DA24-6A12-4985-B3E7-86B575B19763</string>
-			<key>to</key>
-			<string>2E08F068-B86C-49E6-B284-8F4D1ACADAF3 - 2E08F068-B86C-49E6-B284-8F4D1ACADAF3</string>
-		</dict>
-		<key>43DE4AC7-3844-41ED-ABD5-237BDFDB8F92</key>
-		<dict>
-			<key>from</key>
-			<string>DE4E1C58-2B04-4C94-A05D-22980B75798D - DE4E1C58-2B04-4C94-A05D-22980B75798D</string>
-			<key>to</key>
-			<string>0208E701-5BE5-4410-A840-50EB663A68FB - 0208E701-5BE5-4410-A840-50EB663A68FB</string>
-		</dict>
-		<key>63621154-DC6C-4773-ADEA-566C6D6E2E1A</key>
-		<dict>
-			<key>from</key>
-			<string>8C26CE66-CBDD-4C91-BC53-DF7BAB43EE97 - 8C26CE66-CBDD-4C91-BC53-DF7BAB43EE97</string>
-			<key>to</key>
-			<string>1019B12C-7CA6-42C4-A936-7AD5AF9CECED - 1019B12C-7CA6-42C4-A936-7AD5AF9CECED</string>
-		</dict>
-		<key>81FA833C-07CF-4C9E-8062-86697E3E17DF</key>
-		<dict>
-			<key>from</key>
-			<string>2E08F068-B86C-49E6-B284-8F4D1ACADAF3 - 2E08F068-B86C-49E6-B284-8F4D1ACADAF3</string>
-			<key>to</key>
-			<string>3B5AD371-54B7-435F-8192-08EA2A1398C6 - 3B5AD371-54B7-435F-8192-08EA2A1398C6</string>
-		</dict>
-		<key>97D373B3-39B7-40BC-9239-A82858A9536C</key>
-		<dict>
-			<key>from</key>
-			<string>3B5AD371-54B7-435F-8192-08EA2A1398C6 - 3B5AD371-54B7-435F-8192-08EA2A1398C6</string>
-			<key>to</key>
-			<string>49B603A5-9A66-4ECF-8DCD-3060CFA21CF1 - 49B603A5-9A66-4ECF-8DCD-3060CFA21CF1</string>
-		</dict>
-		<key>B1C5F807-162B-4A9A-AA6E-199B481E1611</key>
+		<key>34DDE87C-C380-4585-8BC2-83D2E2069532</key>
 		<dict>
 			<key>from</key>
 			<string>1476FE97-BB64-46D8-A58A-AB2309214EE6 - 1476FE97-BB64-46D8-A58A-AB2309214EE6</string>
 			<key>to</key>
 			<string>8C26CE66-CBDD-4C91-BC53-DF7BAB43EE97 - 8C26CE66-CBDD-4C91-BC53-DF7BAB43EE97</string>
 		</dict>
-		<key>D38246D6-3F53-4C4B-8855-E1294CA07BA3</key>
-		<dict>
-			<key>from</key>
-			<string>49B603A5-9A66-4ECF-8DCD-3060CFA21CF1 - 49B603A5-9A66-4ECF-8DCD-3060CFA21CF1</string>
-			<key>to</key>
-			<string>DE4E1C58-2B04-4C94-A05D-22980B75798D - DE4E1C58-2B04-4C94-A05D-22980B75798D</string>
-		</dict>
-		<key>D570B652-61F3-4906-A32F-823EE8429EB8</key>
-		<dict>
-			<key>from</key>
-			<string>1019B12C-7CA6-42C4-A936-7AD5AF9CECED - 1019B12C-7CA6-42C4-A936-7AD5AF9CECED</string>
-			<key>to</key>
-			<string>3413DA24-6A12-4985-B3E7-86B575B19763 - 3413DA24-6A12-4985-B3E7-86B575B19763</string>
-		</dict>
-		<key>E657E4DD-8D77-49DC-BEE5-A22BE9C50ABF</key>
+		<key>66061C9A-8B69-4806-8179-6C2D8DC0B3A1</key>
 		<dict>
 			<key>from</key>
 			<string>D0CA9199-B43C-4E86-A3F7-6FEDF3A39741 - D0CA9199-B43C-4E86-A3F7-6FEDF3A39741</string>
 			<key>to</key>
 			<string>FCC8F120-FA53-4DBD-B8CB-4FD253B34D4C - FCC8F120-FA53-4DBD-B8CB-4FD253B34D4C</string>
 		</dict>
-		<key>FB77F9C4-3794-4603-86E7-42886793048E</key>
+		<key>7BAA9957-0288-4A84-97B6-EACE5CFA68BD</key>
+		<dict>
+			<key>from</key>
+			<string>2E08F068-B86C-49E6-B284-8F4D1ACADAF3 - 2E08F068-B86C-49E6-B284-8F4D1ACADAF3</string>
+			<key>to</key>
+			<string>3B5AD371-54B7-435F-8192-08EA2A1398C6 - 3B5AD371-54B7-435F-8192-08EA2A1398C6</string>
+		</dict>
+		<key>84ED4C80-FC2B-4DD9-9BD2-1607DBE261A3</key>
+		<dict>
+			<key>from</key>
+			<string>B2299434-5CE3-4841-9F09-3E509AB237ED - B2299434-5CE3-4841-9F09-3E509AB237ED</string>
+			<key>to</key>
+			<string>D0CA9199-B43C-4E86-A3F7-6FEDF3A39741 - D0CA9199-B43C-4E86-A3F7-6FEDF3A39741</string>
+		</dict>
+		<key>9AC2359A-8015-49B9-8400-253C7DEEE7F2</key>
+		<dict>
+			<key>from</key>
+			<string>282E1BE3-A983-4A4D-A673-1DB818011C5D - 282E1BE3-A983-4A4D-A673-1DB818011C5D</string>
+			<key>to</key>
+			<string>2E08F068-B86C-49E6-B284-8F4D1ACADAF3 - 2E08F068-B86C-49E6-B284-8F4D1ACADAF3</string>
+		</dict>
+		<key>A1223735-232D-4C63-970C-E17420C9F83B</key>
 		<dict>
 			<key>to</key>
 			<string>1476FE97-BB64-46D8-A58A-AB2309214EE6 - 1476FE97-BB64-46D8-A58A-AB2309214EE6</string>
 		</dict>
+		<key>A94841A2-F02F-424A-9D64-00B5B2856235</key>
+		<dict>
+			<key>from</key>
+			<string>DE4E1C58-2B04-4C94-A05D-22980B75798D - DE4E1C58-2B04-4C94-A05D-22980B75798D</string>
+			<key>to</key>
+			<string>0208E701-5BE5-4410-A840-50EB663A68FB - 0208E701-5BE5-4410-A840-50EB663A68FB</string>
+		</dict>
+		<key>A9CA3CBA-8D58-47D4-ABB9-1A6930F81278</key>
+		<dict>
+			<key>from</key>
+			<string>3413DA24-6A12-4985-B3E7-86B575B19763 - 3413DA24-6A12-4985-B3E7-86B575B19763</string>
+			<key>to</key>
+			<string>282E1BE3-A983-4A4D-A673-1DB818011C5D - 282E1BE3-A983-4A4D-A673-1DB818011C5D</string>
+		</dict>
+		<key>D11923F8-09ED-4E02-B7D3-E55DCD913F43</key>
+		<dict>
+			<key>from</key>
+			<string>3B5AD371-54B7-435F-8192-08EA2A1398C6 - 3B5AD371-54B7-435F-8192-08EA2A1398C6</string>
+			<key>to</key>
+			<string>49B603A5-9A66-4ECF-8DCD-3060CFA21CF1 - 49B603A5-9A66-4ECF-8DCD-3060CFA21CF1</string>
+		</dict>
+		<key>DCE59B57-CB6B-4C60-B5F6-5419DC1FAF70</key>
+		<dict>
+			<key>from</key>
+			<string>1019B12C-7CA6-42C4-A936-7AD5AF9CECED - 1019B12C-7CA6-42C4-A936-7AD5AF9CECED</string>
+			<key>to</key>
+			<string>3413DA24-6A12-4985-B3E7-86B575B19763 - 3413DA24-6A12-4985-B3E7-86B575B19763</string>
+		</dict>
+		<key>F41AEA51-27E7-4972-A68D-B269C11BD83F</key>
+		<dict>
+			<key>from</key>
+			<string>49B603A5-9A66-4ECF-8DCD-3060CFA21CF1 - 49B603A5-9A66-4ECF-8DCD-3060CFA21CF1</string>
+			<key>to</key>
+			<string>DE4E1C58-2B04-4C94-A05D-22980B75798D - DE4E1C58-2B04-4C94-A05D-22980B75798D</string>
+		</dict>
+		<key>F841EAFE-C2F9-408B-BB6F-041A895F7C04</key>
+		<dict>
+			<key>from</key>
+			<string>8C26CE66-CBDD-4C91-BC53-DF7BAB43EE97 - 8C26CE66-CBDD-4C91-BC53-DF7BAB43EE97</string>
+			<key>to</key>
+			<string>1019B12C-7CA6-42C4-A936-7AD5AF9CECED - 1019B12C-7CA6-42C4-A936-7AD5AF9CECED</string>
+		</dict>
 	</dict>
 	<key>state</key>
 	<dict>
-		<key>EditorSplitViewPosition</key>
-		<real>563</real>
-		<key>EditorView</key>
-		<integer>2</integer>
-		<key>MainSplitViewPosition_v2</key>
-		<real>394</real>
+		<key>AMLogTabViewSelectedIndex</key>
+		<integer>0</integer>
+		<key>libraryState</key>
+		<dict>
+			<key>actionsMajorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 381.000000, 515.000000, NO</string>
+					<string>0.000000, 516.000000, 381.000000, 182.000000, NO</string>
+				</array>
+			</dict>
+			<key>actionsMinorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 163.000000, 515.000000, NO</string>
+					<string>164.000000, 0.000000, 217.000000, 515.000000, NO</string>
+				</array>
+			</dict>
+			<key>variablesMajorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 350.000000, 555.000000, NO</string>
+					<string>0.000000, 556.000000, 350.000000, 148.000000, NO</string>
+				</array>
+			</dict>
+			<key>variablesMinorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 163.000000, 555.000000, NO</string>
+					<string>164.000000, 0.000000, 186.000000, 555.000000, NO</string>
+				</array>
+			</dict>
+		</dict>
+		<key>majorSplitViewState</key>
+		<dict>
+			<key>expandedPosition</key>
+			<real>0.0</real>
+			<key>subviewState</key>
+			<array>
+				<string>0.000000, 0.000000, 381.000000, 743.000000, NO</string>
+				<string>382.000000, 0.000000, 619.000000, 743.000000, NO</string>
+			</array>
+		</dict>
+		<key>minorSplitViewState</key>
+		<dict>
+			<key>expandedPosition</key>
+			<real>0.0</real>
+			<key>subviewState</key>
+			<array>
+				<string>0.000000, 0.000000, 619.000000, 552.000000, NO</string>
+				<string>0.000000, 562.000000, 619.000000, 162.000000, NO</string>
+			</array>
+		</dict>
 		<key>windowFrame</key>
-		<string>{{55, 56}, {1273, 814}}</string>
-		<key>windowFrameTopLeft</key>
-		<string>{{55, 0}, {1273, 814}}</string>
+		<string>{{75, 58}, {1000, 820}}</string>
 		<key>workflowViewScrollPosition</key>
-		<string>{{0, 0}, {864, 563}}</string>
+		<string>{{0, 1942}, {604, 552}}</string>
 	</dict>
 	<key>variables</key>
 	<array>
@@ -1580,5 +1818,10 @@ open "`cat - | grep '^http'`"</string>
 			<string>APOD_URL</string>
 		</dict>
 	</array>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.application</string>
+	</dict>
 </dict>
 </plist>
