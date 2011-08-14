@@ -22,5 +22,3 @@ folder to remove old pictures.
 
 For the latest version, check
 http://www.doughellmann.com/projects/AstronomyPictureOfTheDay/
-
-$Id: README.txt 1275 2008-02-07 13:08:38Z dhellmann $
