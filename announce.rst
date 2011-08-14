@@ -13,11 +13,13 @@ What's New in this Release?
 This version fixes a problem with APOD pages that link to multiple images 
 so that only the main image on the page is downloaded.
 
-.. _AstronomyPictureOfTheDay: http://www.doughellmann.com/projects/AstronomyPictureOfTheDay/
-
-.. _Astronomy Picture of the Day site: http://antwrp.gsfc.nasa.gov/apod/astropix.html
-
 Download
 ========
 
-Visit the AstronomyPictureOfTheDay project page to download the latest version.
+Visit the `project page`_ to download the latest version.
+
+.. _AstronomyPictureOfTheDay: http://www.doughellmann.com/projects/AstronomyPictureOfTheDay/
+
+.. _project page: http://www.doughellmann.com/projects/AstronomyPictureOfTheDay/
+
+.. _Astronomy Picture of the Day site: http://antwrp.gsfc.nasa.gov/apod/astropix.html
