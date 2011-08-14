@@ -5,7 +5,7 @@
 PROJECT=AstronomyPictureOfTheDay
 VERSION=3.3
 RELEASE=$(PROJECT)-$(VERSION)
-CONTENTS=$(PROJECT).app README.txt
+CONTENTS=$(PROJECT).app README.txt announce.rst
 
 info:
 	PROJECT=$(PROJECT)
@@ -15,9 +15,13 @@ info:
 	@echo "Run 'make package' to create the zip file"
 	@echo
 
+.PHONY: package export upload
+
 package: export
 	(cd dist/; zip -q -r $(RELEASE).zip $(RELEASE))
-	mv dist/*.zip ~/Desktop/
+
+upload: package
+	scp dist/$(RELEASE).zip www.doughellmann.com:/var/www/doughellmann/DocumentRoot/downloads/
 
 export:
 	rm -rf dist
